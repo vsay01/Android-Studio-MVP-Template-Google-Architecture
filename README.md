@@ -2,7 +2,7 @@
 
 This is an Android Studio template for MVP; the template is inspired by [google samples/ android architecture](https://github.com/googlesamples/android-architecture/tree/todo-mvp/)
 
-`Important`: The main goal of this template is to speed up the development process using android mvp template. This is just a template, so feel free to make changes according to your needs. It also shows how to create a set of files using template files in Android Studio.
+`Important`: The main goal of this template is to speed up the development process using android mvp template. This is just a template, so feel free to make changes according to your needs. It also shows how to create a set of files using template files in Android Studio. This template was successfully tested with Android 2.3.3.
 
 Thanks to [riggaroo/android-studio-group-templates-mvp](https://github.com/riggaroo/android-studio-group-templates-mvp) and [benoitletondor/Android-Studio-MVP-template](https://github.com/benoitletondor/Android-Studio-MVP-template) for the resources allow me create my own.
 
@@ -17,8 +17,6 @@ Just run the install script at the root of this repository:
 ```
 ./install.sh
 ```
-
-![Install Script on mac](demo/installscriptmac.gif "Install script on mac")
 
 - Manual installation:
 
@@ -45,7 +43,7 @@ package com.template.test.testmvptemplate; // your application package
 import android.support.v7.app.AppCompatActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
-// TODO: add any relevance methods
+  // TODO: add any relevance methods
 }
 ```
 
@@ -56,7 +54,7 @@ package com.template.test.testmvptemplate; // your application package
 import android.support.v4.app.Fragment;
 
 public class BaseFragment extends Fragment {
-// TODO: add any relevance methods
+  // TODO: add any relevance methods
 }
 
 ```
@@ -67,15 +65,14 @@ package com.template.test.testmvptemplate; // your application package
 
 public interface BaseContract {
 
-interface View<T extends Presenter> {
-void setPresenter(T presenter);
-}
+  interface View<T extends Presenter> {
+    void setPresenter(T presenter);
+  }
 
-interface Presenter {
-void start();
-
-void stop();
-}
+  interface Presenter {
+    void start();
+    void stop();
+  }
 }
 ```
 
@@ -87,14 +84,14 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 
 public class BasePresenter {
-protected Context mContext;
+  protected Context mContext;
 
-public void subscribe(@NonNull Context context) {
-this.mContext = context;
+  public void subscribe(@NonNull Context context) {
+    this.mContext = context;
 
-public boolean isSubscribed() {
-return mContext != null;
-}
+  public boolean isSubscribed() {
+    return mContext != null;
+  }
 }
 ```
 #### 2. Generate MVP template
