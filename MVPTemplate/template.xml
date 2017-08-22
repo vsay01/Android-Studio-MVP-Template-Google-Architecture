@@ -1,0 +1,36 @@
+<template format="4"
+    revision="1"
+    name="MVP Template Google Architect"
+    description="Creates a new MVP classes - Presenter, View and Contract between the two">
+    
+    <category value="MVP" />
+    <formfactor value="Mobile" />
+    
+    <parameter id="className"
+    name="Activity Name"
+    type="string"
+    constraints="class|unique|nonempty"
+    default="ActivityName"
+    help="The name of the functionality that requires MVP views"/>
+    
+    <parameter
+    id="activityLayoutName"
+    name="Activity Layout Name"
+    type="string"
+    constraints="layout|unique|nonempty"
+    suggest="activity_${classToResource(className)}"
+    default="activity_custom"
+    help="The name of the layout to create for the fragment" />
+    
+    <parameter
+    id="fragmentLayoutName"
+    name="Fragment Layout Name"
+    type="string"
+    constraints="layout|unique|nonempty"
+    suggest="fragment_${classToResource(className)}"
+    default="fragment_custom"
+    help="The name of the layout to create for the fragment" />
+    
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+</template>
