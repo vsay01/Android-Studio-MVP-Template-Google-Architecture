@@ -110,7 +110,7 @@ Support
 -------
 
 If you've found an error in this sample, please file an issue to
-https://github.com/vsay01/Android-Studio-MVP-template-google-architect
+https://github.com/vsay01/Android-Studio-MVP-Template-Google-Architecture
 Patches are encouraged, and may be submitted by forking this project and
 submitting a pull request through GitHub.
 
