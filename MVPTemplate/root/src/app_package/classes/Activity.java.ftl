@@ -11,15 +11,15 @@ public class ${className}Activity extends BaseActivity implements ${className}Fr
 
 	setContentView(R.layout.${activityLayoutName}_layout);
 	
-${className}Fragment ${className}Fragment = (${className}Fragment) getSupportFragmentManager()
+${className}Fragment ${className?uncap_first}Fragment = (${className}Fragment) getSupportFragmentManager()
                 .findFragmentById(R.id.frame_layout_content);
-        if (${className}Fragment == null) {
-            ${className}Fragment = ${className}Fragment.newInstance();
+        if (${className?uncap_first}Fragment == null) {
+            ${className?uncap_first}Fragment = ${className}Fragment.newInstance();
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.add(R.id.frame_layout_content, ${className}Fragment);
+            transaction.add(R.id.frame_layout_content, ${className?uncap_first}Fragment);
             transaction.commit();
         }
-        mPresenter = new ${className}Presenter(this, ${className}Fragment);
+        mPresenter = new ${className}Presenter(this, ${className?uncap_first}Fragment);
     }
 
     @Override
