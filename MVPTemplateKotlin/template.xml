@@ -1,7 +1,7 @@
 <template format="4"
     revision="1"
-    name="MVP Template Google Architect (Java)"
-    description="Creates a new MVP classes - Presenter, View and Contract between the two">
+    name="MVP Template Google Architect (Kotlin)"
+    description="Creates a new MVP classes - Presenter, View and Contract between the two in Kotlin">
     
     <category value="MVP" />
     <formfactor value="Mobile" />
