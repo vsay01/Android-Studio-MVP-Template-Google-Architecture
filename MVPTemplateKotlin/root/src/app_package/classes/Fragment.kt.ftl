@@ -1,11 +1,9 @@
-package ${packageName};
+package ${packageName}
 
-import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 
 // Your presenter is available using the mPresenter variable
 class ${className}Fragment : BaseFragment(), ${className}Contract.View {
