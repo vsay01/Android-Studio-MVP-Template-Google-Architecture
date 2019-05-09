@@ -1,5 +1,20 @@
 # Android-Studio-MVP-Template-Google-Architecture
 
+## Updated
+I added support for Kotlin, so there are two templates:
+- MVP Template Google Architect (Java)
+- MVP Template Google Architect (Kotlin)
+
+If you install manually and interested in Kotlin only, you need to copy folder MVP Template Google Architect (Kotlin) otherwise if you install via the script install.sh then both template should be available for you.
+
+One important thing to note is that you need to select source language for each template (Please refer to demo). In other word:
+- If you choose MVP Template Google Architect (Java) template → source language need to be Java
+- If you choose MVP Template Google Architect (Kotlin) template → source language need to be Kotlin
+
+![Create Kotlin MVP template](demo/mvp_template_kotlin.gif "Create Kotlin MVP template")
+
+======================================================================================
+
 This is an Android Studio template for MVP; the template is inspired by [google samples/ android architecture](https://github.com/googlesamples/android-architecture/tree/todo-mvp/)
 
 `Important`: The main goal of this template is to speed up the development process using android mvp template. This is just a template, so feel free to make changes according to your needs. It also shows how to create a set of files using template files in Android Studio. This template was successfully tested with Android 2.3.3.
