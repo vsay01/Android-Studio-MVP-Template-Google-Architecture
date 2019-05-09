@@ -1,4 +1,4 @@
-package ${packageName};
+package ${packageName}
 
 //todo create BaseActivity and import to this class
 class ${className}Activity : BaseActivity(), ${className}Fragment.On${className}FragmentInteractionListener {
