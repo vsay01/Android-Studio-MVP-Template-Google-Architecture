@@ -1,5 +1,10 @@
 # Android-Studio-MVP-Template-Google-Architecture
 
+Starting with Android Studio 4.1, Google ended its support for custom FreeMarker templates. :( 
+Now you can’t just write your FTL files and put them in a template folder of Android Studio
+
+> **For Android Studio 4.1**: You can install this plugin write plugin as follow: https://github.com/vsay01/Android-Studio-MVP-Template-Google-Architecture-Plugin. Generate jar file and install plugin locally.
+
 ## Updated
 I added support for Kotlin, so there are two templates:
 - MVP Template Google Architect (Java)
